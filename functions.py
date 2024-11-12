@@ -26,5 +26,5 @@ def write_tasks(tasks_arg, filepath_w=FILEPATH):
 #But when you run functions.py directly, the value of that variable is __main__.
 #And that allows us to have this condition here.
 if __name__ == '__main__':
-    print('Hello')
+    #print('Hello')
     print(get_tasks())

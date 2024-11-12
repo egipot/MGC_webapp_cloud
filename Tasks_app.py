@@ -19,7 +19,7 @@ def add_task():
 
 def complete_task(key):
     num = int(key)
-    st.write(f'This task "{tasks.pop(num)}')
+    st.write(f'This task "{tasks.pop(num)} has been recently completed.')
     functions.write_tasks(tasks)
 
 #retrieve the task list in tasks.txt - to be displayed
@@ -27,8 +27,7 @@ tasks = functions.get_tasks()
 
 st.title('My Task App')
 
-st.subheader('This is my Tasks Web App.')
-#st.subheader('Hello Burg! Thanks for checking! :*')
+st.subheader('Track your pending tasks in this list.')
 
 st.write('This app is to increase you productivity.')
 
