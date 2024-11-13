@@ -19,7 +19,7 @@ def add_task():
 
 def complete_task(key):
     num = int(key)
-    st.write(f'This task "{tasks.pop(num)} has been recently completed.')
+    st.info(f'This task "{tasks.pop(num)}" has been recently completed.')
     functions.write_tasks(tasks)
 
 #retrieve the task list in tasks.txt - to be displayed
